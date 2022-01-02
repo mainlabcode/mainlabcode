@@ -1,0 +1,2 @@
+rootProject.name = "myshapes"
+include ':app'

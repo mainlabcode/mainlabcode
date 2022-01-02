@@ -1,0 +1,36 @@
+new Thread(new Runnable() {
+               @Override
+               public void run() {
+                   while(true)
+                   {
+
+                       String source=et.getText().toString();
+                       res="";
+                       String arr[]=source.split(" ");
+                       for(int i=0;i<arr.length;i++)
+                       {
+                           if(arr[i].length()<=0)
+                           {
+                               break;
+                           }
+                           String cap= arr[i].substring(0,1).toUpperCase()+arr[i].substring(1);
+                           res=res+cap;
+                           res=res+" ";
+
+                       }
+                       tv.setText(res);
+                   }
+
+
+               }
+           }).start();}
+
+public void onclick(View view)
+        {
+
+            et.setText(res);
+            et.setSelection(et.getText().length());
+        }
+
+
+}

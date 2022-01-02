@@ -1,0 +1,2 @@
+rootProject.name = "javaGPS"
+include ':app'
